@@ -23,6 +23,13 @@ export default defineConfig({
       //     { text: 'CSS classes', link: '/guide/customization/custom-components' }
       //   ]
       // },
+      {
+        text: 'Customization',
+        items: [
+          { text: 'Custom field components', link: '/guide/customization/custom-components' },
+          // { text: 'CSS classes', link: '/guide/customization/custom-components' }
+        ]
+      },
       // {
       //   text: 'Default HTML components',
       //   items: [
