@@ -14,15 +14,9 @@ export default defineConfig({
         text: 'Introduction',
         items: [
           { text: 'Getting started', link: 'guide/introduction/getting-started' },
+          { text: 'Field schema overview', link: 'guide/introduction/field-overview' }
         ]
       },
-      // {
-      //   text: 'Customization',
-      //   items: [
-      //     { text: 'Custom field components', link: '/guide/customization/custom-components' },
-      //     { text: 'CSS classes', link: '/guide/customization/custom-components' }
-      //   ]
-      // },
       {
         text: 'Customization',
         items: [
@@ -30,23 +24,23 @@ export default defineConfig({
           // { text: 'CSS classes', link: '/guide/customization/custom-components' }
         ]
       },
-      // {
-      //   text: 'Default HTML components',
-      //   items: [
-      //     { text: 'FieldCheckbox', link: '/guide/components/field-checkbox' },
-      //     { text: 'FieldColor', link: '/guide/components/field-checkbox' },
-      //     { text: 'FieldInput', link: '/guide/components/field-checkbox' },
-      //     { text: 'FieldNumber', link: '/guide/components/field-checkbox' },
-      //     { text: 'FieldPassword', link: '/guide/components/field-checkbox' },
-      //     { text: 'FieldRadio', link: '/guide/components/field-checkbox' },
-      //     { text: 'FieldSelect', link: '/guide/components/field-checkbox' },
-      //     { text: 'FieldSwitch', link: '/guide/components/field-checkbox' },
-      //     { text: 'FieldText', link: '/guide/components/field-checkbox' },
-      //     { text: 'FieldButton', link: '/guide/components/field-checkbox' },
-      //     { text: 'FieldSubmit', link: '/guide/components/field-checkbox' },
-      //     { text: 'FieldReset', link: '/guide/components/field-checkbox' }
-      //   ]
-      // }
+      {
+        text: 'Mixins',
+        items: [
+          { text: 'abstractField', link: '/guide/mixins/abstract-field' },
+        ]
+      },
+      {
+        text: 'Form Generator',
+        items: [
+          { text: 'Props', link: '/guide/form-generator/props' },
+          { text: 'Events', link: '/guide/form-generator/events' },
+        ],
+      },
+      {
+        text: 'Fields',
+        items: []
+      }
     ],
 
     socialLinks: [

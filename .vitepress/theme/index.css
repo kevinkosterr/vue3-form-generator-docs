@@ -1,3 +1,9 @@
 fieldset {
     border: none;
+    margin: .2rem;
+}
+
+.vue-form-generator input {
+    background: #efefefef;
+    color: #272727FE;
 }

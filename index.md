@@ -9,6 +9,8 @@ hero:
     - theme: brand
       text: Getting Started
       link: guide/introduction/getting-started
-
+    - theme: alt
+      text: Custom components
+      link: guide/customization/custom-components
 ---
 
