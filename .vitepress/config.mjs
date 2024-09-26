@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: '/vue3-form-generator-docs/',
   title: "Vue3 Form Generator",
   description: "Documentation for vue3-form-generator",
   themeConfig: {
