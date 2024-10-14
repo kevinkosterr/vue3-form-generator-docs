@@ -1,5 +1,5 @@
 The base of every field component is the [`abstractField`](/guide/mixins/abstract-field) mixin. Thus, in order to create a custom component, you'll 
-need to make use of the Options API.
+need to make use of the Options API. An example of a field that uses these methods can be found [here](https://github.com/kevinkosterr/vue3-form-generator/blob/master/src/fields/input/FieldSelect.vue).
 
 ## Creating your component
 To start creating your own field component, create a new Vue file and import the [`abstractField`](/guide/mixins/abstract-field) mixin like so:

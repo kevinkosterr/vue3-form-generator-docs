@@ -19,7 +19,8 @@ yarn add @kevinkosterr/vue3-form-generator
 
 :::
 
-Now, to start using the components you'll need to install the plugin inside your main file.
+Now, to start using the components you'll need to install the plugin inside your main file. By default, the components
+are completely un-styled.
 
 ::: code-group
 ```javascript [main.js]
@@ -31,6 +32,13 @@ import VueFormGenerator from '@kevinkosterr/vue3-form-generator'
 const app = createApp(App).use(VueFormGenerator)
 ```
 :::
+
+You can load one of the available themes by importing it inside your `main.js` file.
+```javascript
+import '@kevinkosterr/vue3-form-generator/dist/themes/basic.css'
+// or
+import '@kevinkosterr/vue3-form-generator/dist/themes/legacy.css' // Most of the styling from the old vue-form-generator library
+```
 
 ## Basic example
 
