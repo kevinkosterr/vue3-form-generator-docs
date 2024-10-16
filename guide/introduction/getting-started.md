@@ -35,9 +35,9 @@ const app = createApp(App).use(VueFormGenerator)
 
 You can load one of the available themes by importing it inside your `main.js` file.
 ```javascript
-import '@kevinkosterr/vue3-form-generator/dist/themes/basic.css'
+import '@kevinkosterr/vue3-form-generator/themes/basic.css'
 // or
-import '@kevinkosterr/vue3-form-generator/dist/themes/legacy.css' // Most of the styling from the old vue-form-generator library
+import '@kevinkosterr/vue3-form-generator/themes/legacy.css' // Most of the styling from the old vue-form-generator library
 ```
 
 ## Basic example
