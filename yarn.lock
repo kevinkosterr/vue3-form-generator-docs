@@ -319,10 +319,10 @@
   resolved "https://registry.yarnpkg.com/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.5.0.tgz#3188bcb273a414b0d215fd22a58540b989b9409a"
   integrity sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ==
 
-"@kevinkosterr/vue3-form-generator@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@kevinkosterr/vue3-form-generator/-/vue3-form-generator-0.7.0.tgz#12c144f394c33b4e6c133151ca310335da02b49e"
-  integrity sha512-0dAyWklIwZHXsoh1oZnV4uVvIDQghTHq56d8usLpcuSLI4GzSHT3qzareDaqkRkQIUAp3Bgtg5Q5A6EJtlQGBA==
+"@kevinkosterr/vue3-form-generator@^0.7.2":
+  version "0.7.2"
+  resolved "https://registry.yarnpkg.com/@kevinkosterr/vue3-form-generator/-/vue3-form-generator-0.7.2.tgz#195ef355b031dc60316f0bfc44b24a0cbb10e490"
+  integrity sha512-mdFnTnG6GG2XLAzT/Z4f4bvUTm5r6l0FELMwexhZreyU//UzJBcWKzILayy/Q63ZyVH5snEvEULu+4HmB1wN/w==
 
 "@rollup/rollup-android-arm-eabi@4.22.4":
   version "4.22.4"

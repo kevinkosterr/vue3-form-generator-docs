@@ -40,7 +40,11 @@ export default defineConfig({
       },
       {
         text: 'Fields',
-        items: []
+        items: [
+          { text: 'FieldCheckbox', link: '/guide/fields/field-checkbox' },
+          { text: 'FieldColor', link: '/guide/fields/field-color' },
+          { text: 'FieldNumber', link: '/guide/fields/field-number' }
+        ]
       }
     ],
 
