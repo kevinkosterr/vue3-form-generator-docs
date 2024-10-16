@@ -41,6 +41,9 @@ export default defineConfig({
       {
         text: 'Fields',
         items: []
+        items: [
+          { text: 'FieldCheckbox', link: '/guide/fields/field-checkbox' },
+        ]
       }
     ],
 
