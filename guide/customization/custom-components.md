@@ -1,7 +1,100 @@
-The base of every field component is the [`abstractField`](/guide/mixins/abstract-field) mixin. Thus, in order to create a custom component, you'll 
-need to make use of the Options API. An example of a field that uses these methods can be found [here](https://github.com/kevinkosterr/vue3-form-generator/blob/master/src/fields/input/FieldSelect.vue).
+---
+outline: [2,3]
+---
 
-## Creating your component
+# Creating your component
+
+## Composition API <Badge type="tip" text="2.0.0+" />
+To create a field component you make use of different composables ([?](https://vuejs.org/guide/reusability/composables)) to
+get the behaviour you want the component to have. Different composables handle different functionality inside the field
+component.
+
+Every component must at least use these composables to work properly:
+- [`useFieldEmits`](/guide/composables/useFieldEmits) - returns all events emitted by a field component;
+- [`useFieldProps`](/guide/composables/useFieldProps) - returns all props used by a field component;
+- [`useFormModel`](/guide/composables/useFormModel) - used to get the current model value for this field component.
+
+Optional:
+- [`useFieldValidate`](/guide/composables/useFieldValidate) - used for validation of the field;
+- [`useFieldAttributes`](/guide/composables/useFieldAttributes) - holds different dynamic field attributes like `required` and `readonly`.
+
+
+### Basic example
+::: code-group
+```vue [template]
+<template>
+  <input
+    :id="id"
+    class="field-input"
+    type="text"
+    :name="field.name"
+    :required="isRequired"
+    :disabled="isDisabled"
+    :placeholder="field.placeholder"
+    :autocomplete="field.autocomplete || 'off'"
+    :value="currentModelValue"
+    @input="onFieldValueChanged"
+    @blur="onBlur"
+  >
+</template>
+```
+
+```vue [script setup]
+<script setup>
+import { toRefs } from 'vue'
+import { useFormModel, useFieldAttributes, useFieldValidate, useFieldProps, useFieldEmits } from '@/composables'
+
+const emits = defineEmits(useFieldEmits())
+const props = defineProps(useFieldProps())
+
+const { field, model } = toRefs(props)
+
+const { currentModelValue } = useFormModel(model.value, field.value)
+const { isRequired, isDisabled } = useFieldAttributes(model.value, field.value)
+const { errors, validate } = useFieldValidate(
+  model.value,
+  field.value,
+  isDisabled.value,
+  isRequired.value,
+  false
+)
+
+const onBlur = () => {
+  validate(currentModelValue.value).then((validationErrors) => {
+    emits('validated',
+      validationErrors.length === 0,
+      validationErrors,
+      field.value
+    )
+  })
+}
+
+const onFieldValueChanged = ({ target }) => {
+  errors.value = []
+  emits('onInput', target.value)
+}
+```
+:::
+
+### Advanced example
+For a more advanced example, you can take a look at the [`FieldSelect`](/guide/fields/FieldSelect) ([source](https://github.com/kevinkosterr/vue3-form-generator/blob/composition-api/src/fields/input/FieldSelect.vue)) component.
+
+## Registering your component
+To use your component inside the form generator, your component must be globally available throughout your app. You do this
+by simply registering it in your `main.js` file. Names <strong>must</strong> start with `Field`.
+::: code-group
+```javascript [main.js]
+// other imports etc.
+import FieldCustom from '@/fields' // your import goes here
+
+app.component('FieldCustom', FieldCustom)
+```
+:::
+
+## Options API (Mixin) <Badge type="warning" text="deprecated" /> <Badge type="tip" text="<2.0.0" />
+The base of every field component is the [`abstractField`](/guide/mixins/abstract-field) mixin. Thus, in order to create a custom component, you'll
+need to make use of the Options API. An example of a field that uses these methods can be found [here](https://github.com/kevinkosterr/vue3-form-generator/blob/1.1.1/src/fields/input/FieldSelect.vue).
+
 To start creating your own field component, create a new Vue file and import the [`abstractField`](/guide/mixins/abstract-field) mixin like so:
 
 ```vue

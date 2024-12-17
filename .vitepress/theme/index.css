@@ -7,3 +7,18 @@ fieldset {
     background: #efefefef;
     color: #272727FE;
 }
+
+.VPSidebarItem .VPBadge {
+    float: right;
+}
+
+.VPBadge.custom {
+    padding: 0 5px;
+    border-radius: 8px;
+    font-size: 11px;
+}
+
+.VPBadge.new {
+    background-color: #1b8c57;
+    color: #deded6;
+}
