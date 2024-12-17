@@ -21,4 +21,4 @@ schema.
 
 ### `validated`
 Emitted when the field has been validated, typically done with the `validate()` from the 
-[`useFieldValidate`](/guide/composables/use-field-validate) composable. 
+[`useFieldValidate`](/guide/composables/useFieldValidate) composable. 
