@@ -3,11 +3,16 @@ Vue Form Generator (`vue3-form-generator`) is a schema-based form generator comp
 [`vue-form-generator`](https://github.com/vue-generators/vue-form-generator). This package is built for Vue 3 and aims 
 to have as little dependencies as possible.
 
-All components are (mostly) un-styled out of the box. However, styled components are a planned feature. 
+All components are (mostly) un-styled out of the box. However, you can load one of the available themes from the `themes`
+folder inside the package.
 
 ## Installation
 Use one of the following commands to install the package:
 ::: code-group
+
+```bash [pnpm]
+pnpm add @kevinkosterr/vue3-form-generator
+```
 
 ```bash [npm]
 npm install @kevinkosterr/vue3-form-generator

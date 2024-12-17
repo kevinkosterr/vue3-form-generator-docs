@@ -1,8 +1,9 @@
 ---
 outline: [2,3]
 ---
+# abstractField <Badge type="warning" text="deprecated"/> <Badge type="tip" text="<2.0.0"/>
 The `abstractField` mixin is used as a base for every field component. An thus is recommended to use when 
-[building custom components](/guide/customization/custom-components). This guide aims to give an insight to the internal
+[building custom components](/guide/customization/custom-components#options-api-mixin). This guide aims to give an insight to the internal
 workings of the mixin. As with every mixin, any method or computation can easily be overridden or extended inside any component.
 
 ::: details Overriding a method or computed property

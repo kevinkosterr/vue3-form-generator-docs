@@ -22,13 +22,17 @@ export default defineConfig({
         text: 'Customization',
         items: [
           { text: 'Custom field components', link: '/guide/customization/custom-components' },
-          // { text: 'CSS classes', link: '/guide/customization/custom-components' }
+          { text: 'Custom validators', link: '/guide/customization/custom-validators' }
         ]
       },
       {
-        text: 'Mixins',
+        text: 'Composables',
         items: [
-          { text: 'abstractField', link: '/guide/mixins/abstract-field' },
+          { text: 'useFieldAttributes', link: '/guide/composables/useFieldAttributes' },
+          { text: 'useFieldEmits', link: '/guide/composables/useFieldEmits' },
+          { text: 'useFieldProps', link: '/guide/composables/useFieldProps' },
+          { text: 'useFieldValidate', link: '/guide/composables/useFieldValidate' },
+          { text: 'useFormModel', link: '/guide/composables/useFormModel' }
         ]
       },
       {
@@ -41,11 +45,27 @@ export default defineConfig({
       {
         text: 'Fields',
         items: [
-          { text: 'FieldCheckbox', link: '/guide/fields/field-checkbox' },
-          { text: 'FieldColor', link: '/guide/fields/field-color' },
-          { text: 'FieldNumber', link: '/guide/fields/field-number' }
+          { text: 'FieldButton', link: '/guide/fields/FieldButton' },
+          { text: 'FieldCheckbox', link: '/guide/fields/FieldCheckbox' },
+          { text: 'FieldColor', link: '/guide/fields/FieldColor' },
+          { text: 'FieldNumber', link: '/guide/fields/FieldNumber' },
+          { text: 'FieldPassword', link: '/guide/fields/FieldPassword' },
+          { text: 'FieldRadio', link: '/guide/fields/FieldRadio' },
+          { text: 'FieldReset', link: '/guide/fields/FieldReset' },
+          { text: 'FieldSelect', link: '/guide/fields/FieldSelect' },
+          { text: 'FieldSelectNative', link: '/guide/fields/FieldSelectNative' },
+          { text: 'FieldSubmit', link: '/guide/fields/FieldSubmit' },
+          { text: 'FieldSwitch', link: '/guide/fields/FieldSwitch' },
+          { text: 'FieldText', link: '/guide/fields/FieldText' },
+          { text: 'FieldTextarea', link: '/guide/fields/FieldTextarea' },
         ]
-      }
+      },
+      {
+        text: 'Mixins <span class="VPBadge custom warning">deprecated</span>',
+        items: [
+          { text: 'abstractField', link: '/guide/mixins/abstractField' },
+        ]
+      },
     ],
 
     socialLinks: [

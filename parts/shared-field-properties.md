@@ -14,4 +14,4 @@
 | validator   | _computed_ | `Array<Function> \| Function  \| undefined` | A (list of) validator(s) to be validating the field against.                                    |
 | onValidated | -          | `Function  \| undefined`                    | Method to be called after validation has been completed.                                        |
 
-_*_ see [determineDynamicAttribute()](/guide/mixins/abstract-field.md#determinedynamicattribute) for more information.
+_*_ see [determineDynamicAttribute()](/guide/mixins/abstractField#determinedynamicattribute) for more information.
