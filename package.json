@@ -8,6 +8,6 @@
     "docs:preview": "vitepress preview"
   },
   "dependencies": {
-    "@kevinkosterr/vue3-form-generator": "^2.0.0"
+    "@kevinkosterr/vue3-form-generator": "2.1.0"
   }
 }
