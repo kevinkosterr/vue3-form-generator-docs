@@ -77,7 +77,7 @@ const onFieldValueChanged = ({ target }) => {
 :::
 
 ### Advanced example
-For a more advanced example, you can take a look at the [`FieldSelect`](/guide/fields/FieldSelect) ([source](https://github.com/kevinkosterr/vue3-form-generator/blob/composition-api/src/fields/input/FieldSelect.vue)) component.
+For a more advanced example, you can take a look at the [`FieldSelect`](/guide/fields/FieldSelect) ([source](https://github.com/kevinkosterr/vue3-form-generator/blob/69cb6aeb8e8c82926ec3598e7d73be2d1146a3f2/src/fields/core/FieldSelect.vue)) component.
 
 ## Registering your component
 To use your component inside the form generator, your component must be globally available throughout your app. You do this
@@ -93,7 +93,7 @@ app.component('FieldCustom', FieldCustom)
 
 ## Options API (Mixin) <Badge type="warning" text="deprecated" /> <Badge type="tip" text="<2.0.0" />
 The base of every field component is the [`abstractField`](/guide/mixins/abstractField) mixin. Thus, in order to create a custom component, you'll
-need to make use of the Options API. An example of a field that uses these methods can be found [here](https://github.com/kevinkosterr/vue3-form-generator/blob/1.1.1/src/fields/input/FieldSelect.vue).
+need to make use of the Options API. An example of a field that uses these methods can be found [here](https://github.com/kevinkosterr/vue3-form-generator/blob/89086d7c738825dde7b6c41d4c5e4f6033dce73f/src/fields/input/FieldSelect.vue).
 
 To start creating your own field component, create a new Vue file and import the [`abstractField`](/guide/mixins/abstractField) mixin like so:
 
