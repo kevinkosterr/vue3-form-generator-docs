@@ -1,5 +1,9 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, onBeforeMount } from 'vue'
+
+const props = defineProps({
+  withInput: Boolean
+})
 
 const form = ref({
   model: {
@@ -17,12 +21,16 @@ const form = ref({
     ]
   }
 })
+
+onBeforeMount(() => {
+  form.value.schema.fields[0].withInput = props.withInput
+})
 </script>
 
 <template>
   <ul>
     <li>Hex: {{ form.model.colorChoice }}</li>
-    <li>As badge background: <span class="VPBadge" :style="'background:' + form.model.colorChoice">your color</span></li>
+    <li v-if="!props.withInput">As badge background: <span class="VPBadge" :style="'background:' + form.model.colorChoice">your color</span></li>
   </ul>
   <vue-form-generator :schema="form.schema" :model="form.model"/>
 </template>
