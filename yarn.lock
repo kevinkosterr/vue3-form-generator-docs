@@ -319,10 +319,10 @@
   resolved "https://registry.yarnpkg.com/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.5.0.tgz#3188bcb273a414b0d215fd22a58540b989b9409a"
   integrity sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ==
 
-"@kevinkosterr/vue3-form-generator@2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@kevinkosterr/vue3-form-generator/-/vue3-form-generator-2.1.0.tgz#b3cd05ae1efa6108e554fd5fbb0c447b731aee07"
-  integrity sha512-Yn4vWvZotb3Hh7TfX7KuMgVPnQ7t0/KFzYbxw6IEF27j2XHeLyQCBbh1SYZX3Cbmh4YKvfTsUfeOG04/4KjkzA==
+"@kevinkosterr/vue3-form-generator@2.2.0":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@kevinkosterr/vue3-form-generator/-/vue3-form-generator-2.2.0.tgz#7131114cd5f6145f1e1df37ba13b793343f549f4"
+  integrity sha512-yLBQ9ATAJgej5O5q9EWh3jA/1ZDYSUMwRNH9sAtUBec+f1TuToD6bZ9qAXP99Ct9TD63bVL78B2o3ATBPt5Ntg==
   dependencies:
     "@vueuse/core" "^13.1.0"
     maska "^3.1.1"
