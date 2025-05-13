@@ -8,10 +8,32 @@ FieldColor is a color field that renders an input element of type `color`
 <script setup>
 import FieldColorExample from '/components/FieldColorExample.vue'
 </script>
-
+::: details Code
+```javascript
+{
+    name: 'choiceColor',
+    label: 'Choose a color',
+    model: 'colorChoice',
+    type: 'input',
+    inputType: 'color'
+}
+```
+:::
 <FieldColorExample/>
 
 ## Text input example
+::: details Code
+```javascript
+{
+    name: 'choiceColor',
+    label: 'Choose a color',
+    model: 'colorChoice',
+    type: 'input',
+    inputType: 'color',
+    withInput: true // [!code focus]
+}
+```
+:::
 <FieldColorExample with-input/>
 
 ## Properties
