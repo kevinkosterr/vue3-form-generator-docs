@@ -5,6 +5,11 @@ validator(s).
 
 A field will be validated, by default, once the [`blur`](https://developer.mozilla.org/en-US/docs/Web/API/Element/blur_event) event has occurred.
 
+::: warning
+Client-side validation should **never** replace server-side validation. Make sure you also validate
+a user's input on the server-side.
+:::
+
 <script setup>
 import ValidatorExample from '/components/ValidatorExample.vue'
 </script>
