@@ -45,6 +45,10 @@ To allow for multiple values to be selected, simply add `multiple: true` to your
 :::
 <FieldSelectExample multiple />
 
+::: info TIP 
+You can hold CTRL key (or COMMAND key on Mac) when selecting a value to prevent the options dropdown from closing
+:::
+
 ## Properties
 ::: details Shared properties
 <!--@include: @/parts/shared-field-properties.md-->
