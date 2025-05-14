@@ -16,6 +16,8 @@ import FieldNumberExample from '/components/FieldNumberExample.vue'
 <!--@include: @/parts/shared-field-properties.md-->
 :::
 
-| Property | Default | Type     | Description                                                   |
-|----------|---------|----------|---------------------------------------------------------------|
-| step     | `1`     | `Number` | Amount to increase or decrease the number by (using controls) |
+| Property | Default     | Type     | Description                                                   |
+|----------|-------------|----------|---------------------------------------------------------------|
+| step     | `1`         | `Number` | Amount to increase or decrease the number by (using controls) |
+| min      | `undefined` | `Number` | Minimum amount this number should be                          |
+| max      | `undefined` | `Number` | Maximum amount this number should be                          |
