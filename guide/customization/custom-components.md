@@ -4,6 +4,12 @@ outline: [2,3]
 
 # Creating your component
 
+::: info
+A [template repository](https://github.com/kevinkosterr/field-template) is available on GitHub to make it easy to create
+custom field components and publish them as independent packages. This allows for your field components to keep track
+of their own dependencies. 
+:::
+
 ## Composition API <Badge type="tip" text="2.0.0+" />
 To create a field component you make use of different composables ([?](https://vuejs.org/guide/reusability/composables)) to
 get the behaviour you want the component to have. Different composables handle different functionality inside the field
